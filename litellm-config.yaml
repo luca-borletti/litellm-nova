@@ -3,3 +3,4 @@ model_list:
     litellm_params:
       model: openai/gpt-3.5-turbo                          # The `openai/` prefix will call openai.chat.completions.create
       api_key: os.environ/OPENAI_API_KEY
+
