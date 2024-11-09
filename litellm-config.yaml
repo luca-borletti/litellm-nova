@@ -1,6 +1,21 @@
+# model_list:
+#   - model_name: "*"             # Proxies all requests not in your config
+#     litellm_params:
+#       model: openai/*           # Uses the openai route
+#       api_key: os.environ/OPENAI_API_KEY
+#   - model_name: whisper
+#     litellm_params:
+#       model: whisper-1
+#       api_key: os.environ/OPENAI_API_KEY
+#     model_info:
+#       mode: audio_transcription
+#   - model_name: tts
+#     litellm_params:
+#       model: openai/tts-1
+#       api_key: "os.environ/OPENAI_API_KEY"
+#     model_info:
+#       mode: audio_speech
 model_list:
-  - model_name: gpt-3.5-turbo
+  - model_name: "*" 
     litellm_params:
-      model: openai/gpt-3.5-turbo                          # The `openai/` prefix will call openai.chat.completions.create
-      api_key: os.environ/OPENAI_API_KEY
-
+      model: "*"
